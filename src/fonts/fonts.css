@@ -1,0 +1,163 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3847119, 2019-12-12T14:11:26-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvenirLTPro-Light by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-35-light/
+ * 
+ * Webfont: AvenirLTPro-LightOblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-35-light-oblique/
+ * 
+ * Webfont: AvenirLTPro-Book by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-45-book/
+ * 
+ * Webfont: AvenirLTPro-BookOblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-45-book-oblique/
+ * 
+ * Webfont: AvenirLTPro-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-55-roman/
+ * 
+ * Webfont: AvenirLTPro-Oblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-55-oblique/
+ * 
+ * Webfont: AvenirLTPro-Medium by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-65-medium/
+ * 
+ * Webfont: AvenirLTPro-MediumOblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-65-medium-oblique/
+ * 
+ * Webfont: AvenirLTPro-Heavy by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-85-heavy/
+ * 
+ * Webfont: AvenirLTPro-HeavyOblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-85-heavy-oblique/
+ * 
+ * Webfont: AvenirLTPro-Black by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-95-black/
+ * 
+ * Webfont: AvenirLTPro-BlackOblique by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-95-black-oblique/
+ * 
+ * 
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 Monotype GmbH. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3ab3cf");
+
+@font-face {
+  font-family: "AvenirLTPro-Light";
+  src: url("webfonts/3AB3CF_0_0.eot");
+  src: url("webfonts/3AB3CF_0_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_0_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_0_0.woff") format("woff"),
+    url("webfonts/3AB3CF_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-LightOblique";
+  src: url("webfonts/3AB3CF_1_0.eot");
+  src: url("webfonts/3AB3CF_1_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_1_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_1_0.woff") format("woff"),
+    url("webfonts/3AB3CF_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Book";
+  src: url("webfonts/3AB3CF_2_0.eot");
+  src: url("webfonts/3AB3CF_2_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_2_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_2_0.woff") format("woff"),
+    url("webfonts/3AB3CF_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-BookOblique";
+  src: url("webfonts/3AB3CF_3_0.eot");
+  src: url("webfonts/3AB3CF_3_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_3_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_3_0.woff") format("woff"),
+    url("webfonts/3AB3CF_3_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Roman";
+  src: url("webfonts/3AB3CF_4_0.eot");
+  src: url("webfonts/3AB3CF_4_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_4_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_4_0.woff") format("woff"),
+    url("webfonts/3AB3CF_4_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Oblique";
+  src: url("webfonts/3AB3CF_5_0.eot");
+  src: url("webfonts/3AB3CF_5_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_5_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_5_0.woff") format("woff"),
+    url("webfonts/3AB3CF_5_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Medium";
+  src: url("webfonts/3AB3CF_6_0.eot");
+  src: url("webfonts/3AB3CF_6_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_6_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_6_0.woff") format("woff"),
+    url("webfonts/3AB3CF_6_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-MediumOblique";
+  src: url("webfonts/3AB3CF_7_0.eot");
+  src: url("webfonts/3AB3CF_7_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_7_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_7_0.woff") format("woff"),
+    url("webfonts/3AB3CF_7_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Heavy";
+  src: url("webfonts/3AB3CF_8_0.eot");
+  src: url("webfonts/3AB3CF_8_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_8_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_8_0.woff") format("woff"),
+    url("webfonts/3AB3CF_8_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-HeavyOblique";
+  src: url("webfonts/3AB3CF_9_0.eot");
+  src: url("webfonts/3AB3CF_9_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_9_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_9_0.woff") format("woff"),
+    url("webfonts/3AB3CF_9_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-Black";
+  src: url("webfonts/3AB3CF_A_0.eot");
+  src: url("webfonts/3AB3CF_A_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_A_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_A_0.woff") format("woff"),
+    url("webfonts/3AB3CF_A_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirLTPro-BlackOblique";
+  src: url("webfonts/3AB3CF_B_0.eot");
+  src: url("webfonts/3AB3CF_B_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3AB3CF_B_0.woff2") format("woff2"),
+    url("webfonts/3AB3CF_B_0.woff") format("woff"),
+    url("webfonts/3AB3CF_B_0.ttf") format("truetype");
+}
