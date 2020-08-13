@@ -36,7 +36,7 @@ export const Container = styled.div`
     height: 100vh;
     max-height: 100vh;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
   }
 
   .app-content {
@@ -61,7 +61,7 @@ export const Container = styled.div`
       height: 90px;
       width: 100vw;
       max-width: 100vw;
-      z-index: 0;
+      z-index: 1000;
     }
   }
 `;

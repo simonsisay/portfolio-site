@@ -33,7 +33,7 @@ export const generalTheme: GeneralTypes = {
 };
 
 export const darkTheme: ThemeTypes = {
-  mainBackground: "#000",
+  mainBackground: "#030303",
   backgroundLight: "#020202",
   darkText: "#909096",
   lightText: "#e3e5d2",
@@ -77,7 +77,4 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration:underline;
   }
 
-  button{
-    color:${({ theme }) => theme.mainBackground} !important;
-  }
 `;
