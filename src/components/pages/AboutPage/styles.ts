@@ -11,6 +11,11 @@ export const Container = styled.div`
   padding-left: 60px;
   margin-bottom: 40px;
 
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+  }
+
   .title {
     align-self: flex-start;
     white-space: nowrap;
@@ -30,6 +35,17 @@ export const Container = styled.div`
     }
   }
 
+  .portrait {
+    align-self: center;
+    display: flex;
+  }
+
+  .portrait img {
+    width: 86%;
+    max-width: 86%;
+    border-radius: 16px;
+  }
+
   .top-content {
     margin-top: 8vh;
     display: grid;
@@ -42,20 +58,11 @@ export const Container = styled.div`
       width: 100vw;
 
       .portrait {
-        justify-content: center;
+        height: 100%;
+        width: 94vw;
+        margin-left: 10%;
       }
     }
-  }
-
-  .portrait {
-    align-self: center;
-    display: flex;
-  }
-
-  .portrait img {
-    width: 86%;
-    max-width: 86%;
-    border-radius: 16px;
   }
 `;
 
@@ -125,6 +132,13 @@ export const PersonalInfo = styled.div`
 
     .value {
       color: ${({ theme }) => theme.darkText};
+      font-size: 18px;
+    }
+
+    &:nth-child(4) {
+      .value {
+        font-size: 16px;
+      }
     }
   }
 
@@ -143,7 +157,7 @@ export const PersonalInfo = styled.div`
     background-color: ${({ theme }) => theme.primaryColor};
     padding: 16px 36px;
     font-size: 18px;
-    color: ${({ theme }) => theme.textColor};
+    color: ${({ theme }) => theme.mainBackground};
     font-family: ${({ theme }) => theme.fonts.avenirBold};
     border-radius: 24px;
     cursor: pointer;

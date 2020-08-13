@@ -66,7 +66,7 @@ const NavItem = ({ item }: Props) => {
 
 const Navbar = () => {
   const breakpoints = useBreakpoint();
-  const [isMenuOpen, toggleMenu] = useState(!breakpoints.sm);
+  const [isMenuOpen, toggleMenu] = useState(false);
 
   return (
     <Container isMobile={breakpoints.sm}>
@@ -91,9 +91,27 @@ const Navbar = () => {
             <p className="footer-text">Follow Me</p>
             <div className="divider" />
           </div>
-          <FaTwitter className="social-icon" />
-          <FaGithub className="social-icon" />
-          <FaLinkedin className="social-icon" />
+          <a
+            rel="noopener noreferrer"
+            href={"https://twitter.com/sisay_simon"}
+            target="_blank"
+          >
+            <FaTwitter className="social-icon" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href={"https://github.com/simonsisay"}
+            target="_blank"
+          >
+            <FaGithub className="social-icon" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/simon-sisay-446181187/"
+            target="_blank"
+          >
+            <FaLinkedin className="social-icon" />
+          </a>
         </div>
       )}
     </Container>

@@ -99,7 +99,7 @@ export const Container = styled.div`
     }
 
     .projects {
-      margin-top: 1vh;
+      grid-gap: 0vh;
     }
   }
 `;
@@ -197,6 +197,7 @@ export const Project = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-bottom: 42px;
 
     .project-img {
       padding: 0px;
@@ -204,6 +205,7 @@ export const Project = styled.div`
       width: 80vw;
       height: 50vh;
       justify-items: center;
+      filter: grayscale(0%);
     }
 
     .project-detail {
@@ -217,6 +219,16 @@ export const Project = styled.div`
 
     .description {
       width: 100%;
+    }
+
+    .role {
+      font-size: 18px;
+    }
+    .stack {
+      font-size: 18px;
+    }
+    .stack span {
+      font-size: 15px;
     }
   }
 `;

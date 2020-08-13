@@ -3,10 +3,34 @@ import movieImg from "../../../images/movie.png";
 
 const textureAnimation = keyframes`
   from{
-    background-position: -100% 0%;
+    background-position: 0% 0%;
   }
   to{
     background-position: 100% 100%;
+  }
+`;
+
+const arrowPointing = keyframes`
+  from{
+    transform:translateX(-400%);
+  }
+  to{
+    transform:translateX(400%);
+  }
+`;
+
+const wordAnimation = keyframes`
+  0%{
+    transform:scale(-1) translateY(-20px);
+    opacity:0;
+  }
+  50%{
+    transform:scale(0.5);
+    opacity:0.5;
+  }
+  100%{
+    transform:scale(1);
+    opacity:1;
   }
 `;
 
@@ -20,14 +44,14 @@ export const Container = styled.div`
     position: fixed;
     pointer-events: none;
     -webkit-animation: movie 1s steps(4) infinite;
-    animation: ${textureAnimation} 0.6s steps(4) infinite;
+    animation: ${textureAnimation} 0.3s steps(4) infinite;
     background: url(${movieImg});
     height: 200%;
     left: -50%;
     top: -50%;
     width: 200%;
-    opacity: 0.2;
-    z-index: 10;
+    opacity: 0.5;
+    z-index: 1000;
   }
 
   @media (max-width: 768px) {
@@ -46,6 +70,54 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     text-transform: initial;
+
+    .word {
+      display: inline-block;
+      /* transform: scale(1); */
+      /* animation: ${wordAnimation} 0.1s cubic-bezier(0.39, 0.58, 0, 0.91); */
+      animation-fill-mode: forwards;
+      opacity: 1;
+    }
+
+    .word-1 {
+      animation-delay: 0.1s;
+    }
+
+    .word-2 {
+      animation-delay: 1.4s;
+    }
+
+    .word-3 {
+      animation-delay: 0.8s;
+    }
+
+    .word-4 {
+      animation-delay: 1.2s;
+    }
+
+    .word-5 {
+      animation-delay: 0.6s;
+    }
+
+    .word-6 {
+      animation-delay: 2s;
+    }
+
+    .word-7 {
+      animation-delay: 1.8s;
+    }
+
+    .word-8 {
+      animation-delay: 1.2s;
+    }
+
+    .word-9 {
+      animation-delay:2.4s;
+    }
+
+    .word-10 {
+      animation-delay: 2.8s;
+    }
 
     .comma {
       font-family: cursive;
@@ -66,21 +138,45 @@ export const Container = styled.div`
 
     .explore-button {
       margin-top: 16px;
-      border: 3px solid ${({ theme }) => theme.textColor};
-      background: ${({ theme }) => theme.primaryColor};
-      font-family: ${({ theme }) => theme.fonts.avenirBold};
-      font-size: 1.5em;
-      color: ${({ theme }) => theme.mainBackground};
+      border:none;
+      /* border: 3px solid ${({ theme }) => theme.textColor}; */
+      background: transparent;
+      font-family: ${({ theme }) => theme.fonts.avenirLight};
+      font-size: 0.8em;
+      color: ${({ theme }) => theme.textColor};
       cursor: pointer;
       outline: none;
-      padding: 6px 82px;
       position: relative;
-      height: 60px;
-      width: fit-content;
-      /* overflow-x: hidden; */
       z-index: 0;
+      visibility:hidden;
+      overflow:hidden;
+
+
+      .text{
+        margin-left:5%;
+      }
+      
+
+      .arrow {
+      display: flex;
+      margin-left:10%;
+      /* animation: ${arrowPointing} 1.5s cubic-bezier(0.39, 0.575, 0.565, 1)  forwards; */
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top:40.6%;
+        right: 100%;
+        width: 36px;
+        height: 1px;
+        background-color: ${({ theme }) => theme.textColor};
+      }
     }
   }
+}
+  
 
   @media (max-width: 801px) and (min-height: 1279px) {
     padding-top: 20vh;
@@ -97,7 +193,8 @@ export const Container = styled.div`
 
     .content {
       .explore-button {
-        width: 80vw;
+        visibility: visible;
+        display: flex;
       }
 
       h1,

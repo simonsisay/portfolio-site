@@ -1,4 +1,5 @@
 import React from "react";
+import { default as Image } from "../../Image";
 import { Container, PersonalInfo, Skills } from "./styles";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import Title from "../../Title";
@@ -23,18 +24,25 @@ const skills = [
   { name: "TYPESCRIPT", color: "#28e0fc" },
   { name: "GATSBY", color: "#e2d09e" },
   { name: "EXPRESS", color: "rgb(11, 206, 175)" },
-  { name: "GIT", color: "cyan" },
+  { name: "GIT", color: "#37bf7f" },
 ];
 
 const stuffAboutMe = [
+  {
+    label: "Name",
+    value: "Simon Sisay",
+  },
   {
     label: "Birthday",
     value: "June 24 1998",
   },
   {
-    label: "Website",
-    isLink: true,
-    value: "simonsisay.me",
+    label: "Age",
+    value: getBirthday(),
+  },
+  {
+    label: "Degree",
+    value: "Software Engineering BSc (2021)",
   },
   {
     label: "Phone",
@@ -44,18 +52,10 @@ const stuffAboutMe = [
     label: "City",
     value: "Addis Ababa, Ethiopia",
   },
-  {
-    label: "Age",
-    value: getBirthday(),
-  },
+
   {
     label: "Email",
-    isLink: true,
     value: "Simonsisay9@gmail.com",
-  },
-  {
-    label: "Freelance",
-    value: "Available",
   },
   {
     label: "Professional Experience",
@@ -72,7 +72,11 @@ const AboutPage = () => {
       <div className="content">
         <div className="top-content">
           <div className="portrait">
-            <img src={require("../../../images/portrait.jpg")} />
+            <Image
+              className="portrait-image"
+              filename={"portrait.jpg"}
+              alt="portrait"
+            />
           </div>
           <PersonalInfo>
             <h1 className="profession">

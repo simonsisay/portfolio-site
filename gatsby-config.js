@@ -1,3 +1,10 @@
+const myCustomQueries = {
+  xs: "(max-width: 320px)",
+  sm: "(max-width: 769px)",
+  md: "(max-width: 1024px)",
+  l: "(max-width: 1536px)",
+};
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -16,7 +23,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    "gatsby-plugin-breakpoints",
+    `gatsby-plugin-transition-link`,
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+        queries: myCustomQueries,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -2,11 +2,11 @@ export const projects = [
   {
     name: "Talk In Arabic",
     role: "Lead Frontend Engineer",
-    appType: "E-commerce/Educational",
+    appType: "Educational",
     description:
       "Talk in Arabic (TIA) is a language education platform that teaches spoken Arabic. It offers 8 of the most popular and important dialects of spoken Arabic.",
     image: "talk-in-arabic.png",
-    stack: ["React", "Styled Components", "GraphQL", "Apollo Client", "Twilio"],
+    stack: ["React", "Styled Components", "GraphQL", "Apollo Client", "Stripe"],
   },
   {
     name: "Blue Dot Sessions",
