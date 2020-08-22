@@ -1,8 +1,11 @@
 import React from "react";
 import { Container } from "./styles";
 import { push } from "gatsby";
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const HomePage = () => {
+  const breakpoints = useBreakpoint();
   return (
     <Container>
       <div className="background"></div>
@@ -27,15 +30,32 @@ const HomePage = () => {
           <span className="arrow">></span>
           <span className="text"> Explore</span>
         </button>
+        {breakpoints.sm && (
+          <div className="social-icons">
+            <a
+              rel="noopener noreferrer"
+              href={"https://twitter.com/sisay_simon"}
+              target="_blank"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            <a
+              rel="noopener noreferrer"
+              href={"https://github.com/simonsisay"}
+              target="_blank"
+            >
+              <FaGithub className="social-icon" />
+            </a>
+            <a
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/simon-sisay-446181187/"
+              target="_blank"
+            >
+              <FaLinkedin className="social-icon" />
+            </a>
+          </div>
+        )}
       </div>
-      {/* <div className="right-content">
-        {/* <img
-          className="photo"
-          src={require("../../../images/me.jpg")}
-          alt="photo of Simon Sisay"
-          style={{ zIndex: 10000 }}
-        /> */}
-      {/* </div> */} */}
     </Container>
   );
 };
