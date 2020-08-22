@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   .portrait-image {
     width: 100%;
-    height: 100%;
+    height: 43vh;
   }
 
   .title {
@@ -44,6 +44,7 @@ export const Container = styled.div`
     width: 86%;
     max-width: 86%;
     border-radius: 16px;
+    object-position: 6% 18% !important;
   }
 
   .top-content {
