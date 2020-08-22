@@ -190,6 +190,8 @@ export const Container = styled.div`
     width: 100%;
     margin-top: 0%;
     margin-left: 0px;
+    max-height:100vh;
+    position:relative;
 
     .content {
       .explore-button {
@@ -200,6 +202,17 @@ export const Container = styled.div`
       h1,
       .hero-text {
         font-size: 6vh;
+      }
+    }
+
+    .social-icons{
+      position:absolute;
+      bottom:-20px;
+      right:20px;
+
+      a{
+        color:${({ theme }) => theme.darkText};
+        margin-left:12px;
       }
     }
   }
