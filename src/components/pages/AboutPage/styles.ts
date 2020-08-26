@@ -150,7 +150,7 @@ export const PersonalInfo = styled.div`
       font-size: 18px;
     }
 
-    &:nth-child(4) {
+    &:nth-child(2) {
       .value {
         font-size: 16px;
       }
@@ -174,7 +174,7 @@ export const PersonalInfo = styled.div`
     font-size: 18px;
     color: ${({ theme }) => theme.mainBackground};
     font-family: ${({ theme }) => theme.fonts.avenirBold};
-    border-radius: 24px;
+    /* border-radius: 24px; */
     cursor: pointer;
     outline: none;
     box-shadow: rgba(12, 12, 12, 0.4) 0px 1px 3px 2px;

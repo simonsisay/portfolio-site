@@ -206,6 +206,9 @@ export const Project = styled.div`
     height: 100%;
     margin-bottom: 42px;
 
+    .project-name {
+      font-size: 5vh;
+    }
     .project-img {
       padding: 0px;
       margin: 0px;

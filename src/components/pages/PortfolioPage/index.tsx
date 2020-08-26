@@ -24,7 +24,7 @@ const PortfolioPage = () => {
                 className="project-img"
               />
             </span>
-            )}
+
             <div className="project-detail">
               <div className="header">
                 <h3 className="type">{project.appType}</h3>

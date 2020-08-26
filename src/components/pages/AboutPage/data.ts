@@ -26,20 +26,22 @@ export const stuffAboutMe = [
     value: "Simon Sisay",
   },
   {
-    label: "Birthday",
-    value: "June 24 1998",
+    label: "Degree",
+    value: "Software Engineering BSc (2021)",
   },
   {
     label: "Age",
     value: getBirthday(),
   },
+
   {
-    label: "Degree",
-    value: "Software Engineering BSc (2021)",
+    label: "Professional Experience",
+    value: "2 years",
   },
   {
-    label: "Phone",
-    value: "+251911056281",
+    label: "Work",
+    value: "Alama.co",
+    isLink: true,
   },
   {
     label: "City",
@@ -47,11 +49,12 @@ export const stuffAboutMe = [
   },
 
   {
-    label: "Email",
-    value: "Simonsisay9@gmail.com",
+    label: "Phone",
+    value: "+251911056281",
   },
+
   {
-    label: "Professional Experience",
-    value: "2 years",
+    label: "Email",
+    value: "Simon@alama.co",
   },
 ];

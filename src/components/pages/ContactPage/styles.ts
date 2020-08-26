@@ -132,6 +132,19 @@ export const Container = styled.div`
       line-height: 42px;
     }
 
+    .phone {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 20px;
+        color: white;
+        font-family: ${({ theme }) => theme.fonts.avenirHeavy};
+        margin-left: -19px;
+      }
+    }
+
     .social-icons {
       display: flex;
       margin-top: 24px;

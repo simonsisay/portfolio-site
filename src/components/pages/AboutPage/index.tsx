@@ -31,11 +31,17 @@ const AboutPage = () => {
               {stuffAboutMe.map(item => (
                 <div className="info">
                   <span className="label">{item.label}: </span>
-                  <span className={`value`}>{item.value}</span>
+                  {item.isLink && "link" ? (
+                    <a href={`https://${item.value}`} className="value link">
+                      {item.value}
+                    </a>
+                  ) : (
+                    <span className={`value`}>{item.value}</span>
+                  )}
                 </div>
               ))}
               <div className="buttons">
-                <button onClick={() => push("/contact")}>Contact me</button>
+                {/* <button onClick={() => push("/contact")}>Contact me</button> */}
                 {/* <button onClick={() => setIsReadingStory(true)}>
                   Read my story
                 </button> */}
