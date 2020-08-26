@@ -92,6 +92,7 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: -15px 13px 20px 4px #0a0a0b, -3px -3px 0px #000000;
     padding-left: 12px;
     position: relative;
     height: 70%;

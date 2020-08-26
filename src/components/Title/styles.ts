@@ -9,6 +9,15 @@ const slideRight = keyframes`
   }
 `;
 
+const slideRightMobile = keyframes`
+  from{
+    transform:translateX(0px)
+  }
+  to{
+    transform:translateX(60px)
+  }
+`;
+
 export const TitleText = styled.h1`
   position: relative;
   margin: 0px;
@@ -30,5 +39,16 @@ export const TitleText = styled.h1`
     height: 4px;
     border-radius: 4px;
     background-color: ${({ theme }) => theme.highlightColor};
+  }
+
+  @media (max-width: 560px) {
+    h1 {
+      animation: ${slideRightMobile} 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        forwards;
+    }
+
+    span {
+      width: 50px;
+    }
   }
 `;
