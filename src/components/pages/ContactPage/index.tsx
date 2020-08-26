@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "./styles";
 import Title from "../../Title";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaMobileAlt } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import { Spinner } from "../../Spinner";
 
@@ -119,6 +119,10 @@ const ContactPage = () => {
             just want to say hello, please feel free to send me a message or
             follow me on my socials.
           </p>
+          <div className="phone">
+            <FaMobileAlt className="social-icon" />
+            <p>+251911056281</p>
+          </div>
           <div className="social-icons">
             <a
               rel="noopener noreferrer"
