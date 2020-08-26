@@ -74,7 +74,7 @@ export const Container = styled.div`
     height: fit-content;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 4vh;
+    grid-gap: 120px;
   }
 
   .project {
@@ -99,7 +99,7 @@ export const Container = styled.div`
     }
 
     .projects {
-      grid-gap: 0vh;
+      grid-gap: 60px;
     }
   }
 `;

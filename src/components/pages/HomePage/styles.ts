@@ -187,6 +187,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: calc(100vh - 90px);
+    max-height: calc(100vh - 90px);
     width: 100%;
     margin-top: 0%;
     margin-left: 0px;
