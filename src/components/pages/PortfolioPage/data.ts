@@ -7,6 +7,7 @@ export const projects = [
       "Talk in Arabic (TIA) is a language education platform that teaches spoken Arabic. It offers 8 of the most popular and important dialects of spoken Arabic.",
     image: "talk-in-arabic.png",
     stack: ["React", "Styled Components", "GraphQL", "Apollo Client", "Stripe"],
+    link: "Private",
   },
   {
     name: "Blue Dot Sessions",
@@ -16,6 +17,7 @@ export const projects = [
       "Blue Dot is a boutique music studio that makes available a library of originally recorded music for film-makers, audiobook companies and other narrative audio producers",
     image: "bluedot.png",
     stack: ["React", "Styled Components", "GraphQL", "Apollo Client", "Stripe"],
+    link: "https://app.sessions.blue/",
   },
 
   {
@@ -26,6 +28,7 @@ export const projects = [
     description:
       "Socionado is a market place that connects businesses with hand picked freelance social media marketers",
     stack: ["React", "Stripe"],
+    link: "https://app.socionado.com/",
   },
   {
     name: "Financr",
@@ -35,6 +38,7 @@ export const projects = [
     description:
       "Financr is a marketplace for competitive personal loan offers. With Financr, borrowers apply for the best financial products on the market with one simple application.",
     stack: ["React", "Styled-Components", "Typescript", "Twilio"],
+    link: "https://financr.com.au/",
   },
   {
     name: "Moko's",

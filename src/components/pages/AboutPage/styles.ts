@@ -41,10 +41,14 @@ export const Container = styled.div`
   }
 
   .portrait img {
-    width: 86%;
-    max-width: 86%;
+    max-width: 70%;
     border-radius: 16px;
     object-position: 6% 18% !important;
+    object-fit: cover !important;
+
+    @media (max-width: 767px) {
+      max-width: 90%;
+    }
   }
 
   .top-content {
@@ -84,6 +88,16 @@ export const PersonalInfo = styled.div`
       grid-column-gap: 8px;
       white-space: nowrap;
     }
+
+    .portrait,
+    .portrait-image {
+      width: 100vw !important;
+    }
+    .portrait img {
+      width: 100vw;
+      height: 64vh;
+      max-width: 90%;
+    }
   }
 
   @media (max-width: 500px) {
@@ -119,7 +133,7 @@ export const PersonalInfo = styled.div`
   .profession {
     font-family: ${({ theme }) => theme.fonts.avenirLight};
     color: ${({ theme }) => theme.textColor};
-    font-size: 2.2em;
+    font-size: 2em;
     text-transform: capitalize;
   }
 

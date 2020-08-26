@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Project, ProjectImage } from "./styles";
+import { Container, Project } from "./styles";
 import Title from "../../Title";
 import { projects } from "./data";
 import { default as Image } from "../../Image";
@@ -24,7 +24,7 @@ const PortfolioPage = () => {
                 className="project-img"
               />
             </span>
-
+            )}
             <div className="project-detail">
               <div className="header">
                 <h3 className="type">{project.appType}</h3>
@@ -32,6 +32,17 @@ const PortfolioPage = () => {
               </div>
               <p className="description">{project.description}</p>
               <p className="role">Role: {project.role}</p>
+              {project.link && (
+                <p className="app-link">
+                  Link:{" "}
+                  <a
+                    className="link"
+                    href={project.link !== "Private" && project.link}
+                  >
+                    {project.link !== "Private" ? project.link : "Private"}
+                  </a>
+                </p>
+              )}
               <div className="stack">
                 Technologies:
                 {project.stack.map((stack, index) => (

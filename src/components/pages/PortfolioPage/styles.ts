@@ -26,6 +26,7 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.textColor};
     display: flex;
     align-items: center;
+    margin-top: 24px;
 
     &:hover .contact-link {
       text-decoration: underline;
@@ -69,7 +70,7 @@ export const Container = styled.div`
   }
 
   .projects {
-    margin-top: 6vh;
+    margin-top: 8vh;
     width: 100%;
     height: fit-content;
     display: grid;
@@ -100,6 +101,7 @@ export const Container = styled.div`
 
     .projects {
       grid-gap: 60px;
+      margin-top: 2vh;
     }
   }
 `;
@@ -157,14 +159,19 @@ export const Project = styled.div`
 
   .type,
   .role,
+  .app-link,
   .stack {
-    font-size: 2vh;
+    font-size: 2.3vh;
     font-family: ${({ theme }) => theme.fonts.avenirLight};
     color: ${({ theme }) => theme.darkText};
   }
 
+  .app-link {
+    margin-top: 24px;
+  }
+
   .project-name {
-    font-size: 8vh;
+    font-size: 7vh;
     font-family: serif;
     position: relative;
     z-index: 10;
