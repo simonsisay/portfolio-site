@@ -40,8 +40,7 @@ export const stuffAboutMe = [
   },
   {
     label: "Work",
-    value: "Alama.co",
-    isLink: true,
+    value: "Freelancing",
   },
   {
     label: "City",
@@ -55,6 +54,6 @@ export const stuffAboutMe = [
 
   {
     label: "Email",
-    value: "Simon@alama.co",
+    value: "Simonsisay9@gmail.com",
   },
 ];
