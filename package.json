@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.8",
+    "@emailjs/browser": "^3.4.0",
     "@prismicio/types": "^0.1.23",
     "@types/styled-components": "^5.1.22",
     "apollo-cache-inmemory": "^1.6.6",
