@@ -1,0 +1,18 @@
+overwrite: true
+schema:
+  - https://simonsisay.prismic.io/graphql:
+      customFetch: "codegen-prismic-fetch"
+      method: GET
+      headers:
+        Authorization: "Token ${PRISMIC_ACCESS_TOKEN}"
+        Prismic-Ref: "YgqboBEAACkAhwMf"
+generates:
+  # Schema
+  ./schema.graphql:
+    plugins:
+      - schema-ast
+  src/types/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"

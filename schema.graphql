@@ -1,0 +1,436 @@
+type About implements _Document & _Linkable {
+  _linkType: String
+  _meta: Meta!
+  aboutMe: Json
+  portrait: Json
+}
+
+"""A connection to a list of items."""
+type AboutConnectionConnection {
+  """A list of edges."""
+  edges: [AboutConnectionEdge]
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+  totalCount: Long!
+}
+
+"""An edge in a connection."""
+type AboutConnectionEdge {
+  """A cursor for use in pagination."""
+  cursor: String!
+
+  """The item at the end of the edge."""
+  node: About!
+}
+
+type Blog implements _Document & _Linkable {
+  _linkType: String
+  _meta: Meta!
+  content: Json
+  description: Json
+  likes: Float
+  published: Boolean
+  tags: [BlogTags!]
+  title: Json
+}
+
+"""A connection to a list of items."""
+type BlogConnectionConnection {
+  """A list of edges."""
+  edges: [BlogConnectionEdge]
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+  totalCount: Long!
+}
+
+"""An edge in a connection."""
+type BlogConnectionEdge {
+  """A cursor for use in pagination."""
+  cursor: String!
+
+  """The item at the end of the edge."""
+  node: Blog!
+}
+
+type BlogTags {
+  tag: String
+}
+
+type Cv implements _Document & _Linkable {
+  _linkType: String
+  _meta: Meta!
+  cv: _Linkable
+}
+
+"""A connection to a list of items."""
+type CvConnectionConnection {
+  """A list of edges."""
+  edges: [CvConnectionEdge]
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+  totalCount: Long!
+}
+
+"""An edge in a connection."""
+type CvConnectionEdge {
+  """A cursor for use in pagination."""
+  cursor: String!
+
+  """The item at the end of the edge."""
+  node: Cv!
+}
+
+"""DateTime"""
+scalar DateTime
+
+"""Raw JSON value"""
+scalar Json
+
+"""
+The `Long` scalar type represents non-fractional signed whole numeric values. Long can represent values between -(2^63) and 2^63 - 1.
+"""
+scalar Long
+
+type Meta {
+  """Alternate languages the document."""
+  alternateLanguages: [RelatedDocument!]!
+
+  """The first publication date of the document."""
+  firstPublicationDate: DateTime
+
+  """The id of the document."""
+  id: String!
+
+  """The language of the document."""
+  lang: String!
+
+  """The last publication date of the document."""
+  lastPublicationDate: DateTime
+
+  """The tags of the document."""
+  tags: [String!]!
+
+  """The type of the document."""
+  type: String!
+
+  """The uid of the document."""
+  uid: String
+}
+
+"""Information about pagination in a connection."""
+type PageInfo {
+  """When paginating forwards, the cursor to continue."""
+  endCursor: String
+
+  """When paginating forwards, are there more items?"""
+  hasNextPage: Boolean!
+
+  """When paginating backwards, are there more items?"""
+  hasPreviousPage: Boolean!
+
+  """When paginating backwards, the cursor to continue."""
+  startCursor: String
+}
+
+type Projects implements _Document & _Linkable {
+  _linkType: String
+  _meta: Meta!
+  description: Json
+  images: [ProjectsImages!]
+  project_link: _Linkable
+  project_title: Json
+  project_type: Json
+  role: Json
+  technologies: [ProjectsTechnologies!]
+}
+
+"""A connection to a list of items."""
+type ProjectsConnectionConnection {
+  """A list of edges."""
+  edges: [ProjectsConnectionEdge]
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+  totalCount: Long!
+}
+
+"""An edge in a connection."""
+type ProjectsConnectionEdge {
+  """A cursor for use in pagination."""
+  cursor: String!
+
+  """The item at the end of the edge."""
+  node: Projects!
+}
+
+type ProjectsImages {
+  screenshot: Json
+}
+
+type ProjectsTechnologies {
+  stack: Json
+}
+
+type Query {
+  _allDocuments(after: String, before: String, first: Int, firstPublicationDate: DateTime, firstPublicationDate_after: DateTime, firstPublicationDate_before: DateTime, fulltext: String, id: String, id_in: [String!], lang: String, last: Int, lastPublicationDate: DateTime, lastPublicationDate_after: DateTime, lastPublicationDate_before: DateTime, similar: similar, sortBy: SortDocumentsBy, tags: [String!], tags_in: [String!], type: String, type_in: [String!]): _DocumentConnection!
+  allAbouts(after: String, before: String, first: Int, firstPublicationDate: DateTime, firstPublicationDate_after: DateTime, firstPublicationDate_before: DateTime, fulltext: String, id: String, id_in: [String!], lang: String, last: Int, lastPublicationDate: DateTime, lastPublicationDate_after: DateTime, lastPublicationDate_before: DateTime, similar: similar, sortBy: SortAbouty, tags: [String!], tags_in: [String!], uid: String, uid_in: [String!], where: WhereAbout): AboutConnectionConnection!
+  allBlogs(after: String, before: String, first: Int, firstPublicationDate: DateTime, firstPublicationDate_after: DateTime, firstPublicationDate_before: DateTime, fulltext: String, id: String, id_in: [String!], lang: String, last: Int, lastPublicationDate: DateTime, lastPublicationDate_after: DateTime, lastPublicationDate_before: DateTime, similar: similar, sortBy: SortBlogy, tags: [String!], tags_in: [String!], uid: String, uid_in: [String!], where: WhereBlog): BlogConnectionConnection!
+  allCvs(after: String, before: String, first: Int, firstPublicationDate: DateTime, firstPublicationDate_after: DateTime, firstPublicationDate_before: DateTime, fulltext: String, id: String, id_in: [String!], lang: String, last: Int, lastPublicationDate: DateTime, lastPublicationDate_after: DateTime, lastPublicationDate_before: DateTime, similar: similar, sortBy: SortCvy, tags: [String!], tags_in: [String!], uid: String, uid_in: [String!], where: WhereCv): CvConnectionConnection!
+  allProjectss(after: String, before: String, first: Int, firstPublicationDate: DateTime, firstPublicationDate_after: DateTime, firstPublicationDate_before: DateTime, fulltext: String, id: String, id_in: [String!], lang: String, last: Int, lastPublicationDate: DateTime, lastPublicationDate_after: DateTime, lastPublicationDate_before: DateTime, similar: similar, sortBy: SortProjectsy, tags: [String!], tags_in: [String!], uid: String, uid_in: [String!], where: WhereProjects): ProjectsConnectionConnection!
+  allTestimonialss(after: String, before: String, first: Int, firstPublicationDate: DateTime, firstPublicationDate_after: DateTime, firstPublicationDate_before: DateTime, fulltext: String, id: String, id_in: [String!], lang: String, last: Int, lastPublicationDate: DateTime, lastPublicationDate_after: DateTime, lastPublicationDate_before: DateTime, similar: similar, sortBy: SortTestimonialsy, tags: [String!], tags_in: [String!], uid: String, uid_in: [String!], where: WhereTestimonials): TestimonialsConnectionConnection!
+  blog(lang: String!, uid: String!): Blog
+}
+
+type RelatedDocument {
+  """The id of the document."""
+  id: String!
+
+  """The language of the document."""
+  lang: String!
+
+  """The type of the document."""
+  type: String!
+
+  """The uid of the document."""
+  uid: String
+}
+
+enum SortAbouty {
+  aboutMe_ASC
+  aboutMe_DESC
+  meta_firstPublicationDate_ASC
+  meta_firstPublicationDate_DESC
+  meta_lastPublicationDate_ASC
+  meta_lastPublicationDate_DESC
+}
+
+enum SortBlogy {
+  content_ASC
+  content_DESC
+  description_ASC
+  description_DESC
+  likes_ASC
+  likes_DESC
+  meta_firstPublicationDate_ASC
+  meta_firstPublicationDate_DESC
+  meta_lastPublicationDate_ASC
+  meta_lastPublicationDate_DESC
+  title_ASC
+  title_DESC
+}
+
+enum SortCvy {
+  meta_firstPublicationDate_ASC
+  meta_firstPublicationDate_DESC
+  meta_lastPublicationDate_ASC
+  meta_lastPublicationDate_DESC
+}
+
+enum SortDocumentsBy {
+  meta_firstPublicationDate_ASC
+  meta_firstPublicationDate_DESC
+  meta_lastPublicationDate_ASC
+  meta_lastPublicationDate_DESC
+}
+
+enum SortProjectsy {
+  description_ASC
+  description_DESC
+  meta_firstPublicationDate_ASC
+  meta_firstPublicationDate_DESC
+  meta_lastPublicationDate_ASC
+  meta_lastPublicationDate_DESC
+  project_title_ASC
+  project_title_DESC
+  project_type_ASC
+  project_type_DESC
+  role_ASC
+  role_DESC
+}
+
+enum SortTestimonialsy {
+  company_ASC
+  company_DESC
+  meta_firstPublicationDate_ASC
+  meta_firstPublicationDate_DESC
+  meta_lastPublicationDate_ASC
+  meta_lastPublicationDate_DESC
+  name_ASC
+  name_DESC
+  role_ASC
+  role_DESC
+  testimony_ASC
+  testimony_DESC
+}
+
+type Testimonials implements _Document & _Linkable {
+  _linkType: String
+  _meta: Meta!
+  avatar: Json
+  company: Json
+  link: _Linkable
+  name: Json
+  role: Json
+  testimony: Json
+}
+
+"""A connection to a list of items."""
+type TestimonialsConnectionConnection {
+  """A list of edges."""
+  edges: [TestimonialsConnectionEdge]
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+  totalCount: Long!
+}
+
+"""An edge in a connection."""
+type TestimonialsConnectionEdge {
+  """A cursor for use in pagination."""
+  cursor: String!
+
+  """The item at the end of the edge."""
+  node: Testimonials!
+}
+
+input WhereAbout {
+  """about-me"""
+  aboutMe_fulltext: String
+}
+
+input WhereBlog {
+  """content"""
+  content_fulltext: String
+
+  """description"""
+  description_fulltext: String
+
+  """likes"""
+  likes: Float
+
+  """likes"""
+  likes_gt: Float
+
+  """likes"""
+  likes_lt: Float
+
+  """likes"""
+  likes_range: [Float!]
+  published: Boolean
+  tags: WhereBlogTags
+
+  """title"""
+  title_fulltext: String
+}
+
+input WhereBlogTags {
+  tag: String
+  tag_fulltext: String
+}
+
+input WhereCv {
+  """cv"""
+  cv: String
+}
+
+input WhereProjects {
+  """description"""
+  description_fulltext: String
+
+  """project_link"""
+  project_link: String
+
+  """project_title"""
+  project_title_fulltext: String
+
+  """project_type"""
+  project_type_fulltext: String
+
+  """role"""
+  role_fulltext: String
+  technologies: WhereProjectsTechnologies
+}
+
+input WhereProjectsTechnologies {
+  """stack"""
+  stack_fulltext: String
+}
+
+input WhereTestimonials {
+  """company"""
+  company_fulltext: String
+
+  """link"""
+  link: String
+
+  """name"""
+  name_fulltext: String
+
+  """role"""
+  role_fulltext: String
+
+  """testimony"""
+  testimony_fulltext: String
+}
+
+"""A prismic document"""
+interface _Document {
+  _meta: Meta!
+}
+
+"""A connection to a list of items."""
+type _DocumentConnection {
+  """A list of edges."""
+  edges: [_DocumentEdge]
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+  totalCount: Long!
+}
+
+"""An edge in a connection."""
+type _DocumentEdge {
+  """A cursor for use in pagination."""
+  cursor: String!
+
+  """The item at the end of the edge."""
+  node: _Document!
+}
+
+"""An external link"""
+type _ExternalLink implements _Linkable {
+  _linkType: String
+  target: String
+  url: String!
+}
+
+"""A linked file"""
+type _FileLink implements _Linkable {
+  _linkType: String
+  name: String!
+  size: Long!
+  url: String!
+}
+
+"""A linked image"""
+type _ImageLink implements _Linkable {
+  _linkType: String
+  height: Int!
+  name: String!
+  size: Long!
+  url: String!
+  width: Int!
+}
+
+"""A prismic link"""
+interface _Linkable {
+  _linkType: String
+}
+
+input similar {
+  documentId: String!
+  max: Int!
+}

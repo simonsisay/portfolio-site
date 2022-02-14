@@ -1,0 +1,4 @@
+{
+    "name": "Prismic GraphQL Schema",
+    "schemaPath": "schema.graphql"
+}
