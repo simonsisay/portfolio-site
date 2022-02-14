@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: Props) => {
           src={projectImage.url}
         />
         <h1
-          style={{ color: theme === "light" && "#fff" }}
+          style={{ color: theme === "light" ? "#fff" : undefined }}
           className="main-header title project-title"
         >
           {RichText.render(project.project_title)}
