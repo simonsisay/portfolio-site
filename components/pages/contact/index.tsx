@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "./styles";
 import { FaTwitter, FaGithub, FaLinkedin, FaMobileAlt } from "react-icons/fa";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Layout from "../../layout";
 
 const ContactPage = () => {
@@ -25,7 +25,7 @@ const ContactPage = () => {
           "default_service",
           "portfolio_site_contact",
           contactData as any,
-          process.env.GATSBY_EMAIL_USER_ID
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
         )
         .then(
           (result) => {
@@ -112,7 +112,7 @@ const ContactPage = () => {
               <div className="focus-effect" />
             </span>
             <button onClick={sendEmail}>
-              {responseStatus.loading ? <Spinner /> : "Send message"}
+              {responseStatus.loading ? "Sending message..." : "Send message"}
             </button>
           </div>
           <div className="right-content">
