@@ -63,7 +63,6 @@ export const getTestimonies = async () => {
         role: item?.node.role,
         avatar: item?.node.avatar,
         name: item?.node.name,
-        link: item?.node.link?._linkType,
       };
     });
     return { data: testimonies, errors: null };

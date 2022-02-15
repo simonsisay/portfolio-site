@@ -50,9 +50,6 @@ export const TESTIMONY_QUERY = gql`
           role
           company
           name
-          link {
-            _linkType
-          }
           _meta {
             id
           }
