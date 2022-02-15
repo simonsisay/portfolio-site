@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
       </Html>
     );
   }
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: any) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
