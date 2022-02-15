@@ -41,7 +41,7 @@ export const Container = styled.div`
   }
 
   .details p {
-    display: inline-block;
+    display: block;
     margin: 4px;
   }
   .gray {
@@ -51,6 +51,12 @@ export const Container = styled.div`
 
   .description {
     font-size: 22px;
+    display: block;
+  }
+
+  .stack p,
+  .role p {
+    display: inline-block;
   }
 
   @media (max-width: 768px) {

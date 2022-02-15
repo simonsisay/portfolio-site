@@ -19,7 +19,7 @@ type Props = {
   errors: GraphQLErrors;
 };
 
-export default ({ data, errors }: Props) => {
+const BlogsPage = ({ data, errors }: Props) => {
   if (data) {
     return (
       <Layout>
@@ -34,3 +34,5 @@ export default ({ data, errors }: Props) => {
       </Layout>
     );
 };
+
+export default BlogsPage;

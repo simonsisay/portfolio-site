@@ -16,8 +16,8 @@ const BlogSection = ({ blogs }: Props) => {
         <h2 className="title">Recently published</h2>
       </div>
       <div className="blogs">
-        {blogs.map((blog) => (
-          <BlogCard blog={blog} />
+        {blogs.map((blog, index) => (
+          <BlogCard key={index} blog={blog} />
         ))}
       </div>
       <div className="button-container">

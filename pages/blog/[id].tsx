@@ -3,13 +3,17 @@ import { Params } from "next/dist/server/router";
 import Layout from "../../components/layout";
 import Blog from "../../components/pages/blog";
 import { getBlogById, getBlogs } from "../../lib/lib";
-import { Query } from "../../src/types/generated/graphql";
+import { Blog as BlogType, Query } from "../../src/types/generated/graphql";
 
 export const getStaticProps = async ({ params }: { params: Params }) => {
   const { data, errors = null } = await getBlogById(params.id);
+  let blog = null;
+  if (data) {
+    blog = data?.map((item) => item)[0];
+  }
   return {
     props: {
-      data,
+      data: blog,
       errors,
     },
   };
@@ -27,13 +31,23 @@ export const getStaticPaths = async () => {
 };
 
 type Props = {
-  data: Query["blog"][];
+  data: BlogType | null;
   errors: GraphQLErrors;
 };
-export default ({ data }: Props) => {
-  return (
-    <Layout>
-      <Blog blog={data[0]} />
-    </Layout>
-  );
+const BlogPage = ({ data }: Props) => {
+  if (data) {
+    return (
+      <Layout>
+        <Blog blog={data} />
+      </Layout>
+    );
+  } else {
+    return (
+      <Layout>
+        <p className="error">Something went wrong</p>
+      </Layout>
+    );
+  }
 };
+
+export default BlogPage;

@@ -18,6 +18,7 @@ const About = ({ about }: Props) => {
               width={"50%"}
               height={"60vh"}
               layout="responsive"
+              alt={"Simon Sisay"}
               src={about.portrait.url}
             />
           </div>

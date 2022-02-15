@@ -18,8 +18,8 @@ const Testimony = ({ testimonies }: Props) => {
       </div>
       <div className="carousel-container">
         <Carousel>
-          {testimonies.map((testimony) => (
-            <TestimonyCard data={testimony} />
+          {testimonies.map((testimony, index) => (
+            <TestimonyCard key={index} data={testimony} />
           ))}
         </Carousel>
       </div>

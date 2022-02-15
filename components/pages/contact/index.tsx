@@ -29,7 +29,6 @@ const ContactPage = () => {
         )
         .then(
           (result) => {
-            console.log(result);
             if (result.status === 200) {
               setResponseStatus({
                 ...responseStatus,
@@ -117,8 +116,9 @@ const ContactPage = () => {
           </div>
           <div className="right-content">
             <p>
-              If you're looking for a super fast and user friendly website/App
-              or just want to say hello, please feel free to send me a message.
+              If you&apos;re looking for a super fast and user friendly
+              website/App or just want to say hello, please feel free to send me
+              a message.
             </p>
             <div className="phone">
               <FaMobileAlt className="social-icon" />
