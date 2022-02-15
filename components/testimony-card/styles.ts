@@ -40,8 +40,10 @@ export const Container = styled.div`
 
   .image-container {
     position: relative;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    max-height: 80px;
   }
 
   .avatar {

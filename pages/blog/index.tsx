@@ -22,7 +22,7 @@ type Props = {
 const BlogsPage = ({ data, errors }: Props) => {
   if (data) {
     return (
-      <Layout>
+      <Layout title={"Blog"}>
         <Blogs blogs={data} />
       </Layout>
     );
