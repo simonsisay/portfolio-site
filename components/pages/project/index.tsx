@@ -6,20 +6,19 @@ import { Projects } from "../../../src/types/generated/graphql";
 import { RichText } from "prismic-reactjs";
 
 type Props = {
-  project: Projects[];
+  project: Projects;
 };
 
 const Project = ({ project }: Props) => {
-  const data = project[0];
-  console.log(data);
   return (
     <Container>
-      <h1 className="main-header">{RichText.render(data.project_title)}</h1>
+      <h1 className="main-header">{RichText.render(project?.project_title)}</h1>
       <div className="carousel-container">
         <Carousel showProgress={false}>
-          {data.images?.map((image) => (
-            <div className="image-container">
+          {project?.images?.map((image) => (
+            <div className="image-container" key={image.screenshot.url}>
               <Image
+                alt={project?.project_title}
                 className="image"
                 width={1000}
                 height={500}
@@ -32,13 +31,17 @@ const Project = ({ project }: Props) => {
       </div>
 
       <div className="details">
-        <p className="gray text">{RichText.render(data.project_type)}</p>
-        <p className="text description">{RichText.render(data.description)}</p>
-        <p className="gray text ">Role: {RichText.render(data.role)}</p>
+        <p className="gray text">{RichText.render(project?.project_type)}</p>
+        <p className="text description">
+          {RichText.render(project?.description)}
+        </p>
+        <p className="gray text role">Role: {RichText.render(project?.role)}</p>
         <div className="stack gray">
           <p className="label gray">Tech:</p>
-          {data.technologies?.map((item) => (
-            <p className="gray tech-stack">{RichText.render(item.stack)},</p>
+          {project?.technologies?.map((item) => (
+            <p key={item.stack} className="gray tech-stack">
+              {RichText.render(item.stack)},
+            </p>
           ))}
         </div>
       </div>

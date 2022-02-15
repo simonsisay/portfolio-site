@@ -15,10 +15,9 @@ const Testimony = ({ data }: Props) => {
         <div className="image-container">
           <Image
             className="avatar"
-            width={80}
-            height={80}
             layout={"fill"}
             src={data.avatar.url}
+            alt={data.name}
           />
         </div>
 

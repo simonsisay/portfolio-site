@@ -4,10 +4,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="preload" as="font" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" as="font" href="https://fonts.googleapis.com" />
         <link
           as="font"
-          rel="preload"
+          rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin={"true"}
         />
@@ -15,9 +15,9 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
           rel="stylesheet"
         ></link>
-        <link rel="preload" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
-          rel="preload"
+          rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin={"true"}
         ></link>

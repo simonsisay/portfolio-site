@@ -14,16 +14,17 @@ const ProjectCard = ({ project }: Props) => {
   const projectImage = project.images?.map((item) => item.screenshot)[0];
   const { theme } = useTheme();
   return (
-    <Link href={`/project/${project._meta.id}`}>
+    <Link href={`/project/${project._meta.id}`} passHref>
       <Container>
         <Image
           width={"100%"}
           height={"100%"}
           layout="responsive"
           src={projectImage.url}
+          alt={project.project_title}
         />
         <h1
-          style={{ color: theme === "light" && "#fff" }}
+          style={{ color: theme === "light" ? "#fff" : undefined }}
           className="main-header title project-title"
         >
           {RichText.render(project.project_title)}

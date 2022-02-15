@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="content">
         <h1 className="main-header">
           <Link href="#about">
-            <a className="underline">I'm Simon</a>
+            <a className="underline">I&apos;m Simon</a>
           </Link>
         </h1>
         <h1 className="main-header sub-header">

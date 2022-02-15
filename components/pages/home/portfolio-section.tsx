@@ -12,11 +12,11 @@ const Portfolio = ({ projects }: Props) => {
       <h2 className="title">Projects</h2>
       <div className="project-list">
         <h1 className="main-header projects-header">
-          Works that I've done in the past
+          Works that I&apos;ve done in the past
         </h1>
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
-            <div className="card">
+            <div className="card" key={index}>
               <ProjectCard project={project} />
             </div>
           );
