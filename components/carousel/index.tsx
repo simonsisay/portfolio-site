@@ -43,10 +43,10 @@ const Carousel: React.FC<Props> = ({ children, showProgress = true }) => {
         })}
         <div className="footer">
           <div className="buttons">
-            <button onClick={onPrev}>
+            <button name="prev-slide" onClick={onPrev}>
               <FaAngleLeft className="arrow-icon" />
             </button>
-            <button onClick={onNext}>
+            <button name="next-slide" onClick={onNext}>
               <FaAngleRight className="arrow-icon" />
             </button>
           </div>
