@@ -1,5 +1,6 @@
 import { GraphQLErrors } from "@apollo/client/errors";
 import { Params } from "next/dist/server/router";
+import { useRouter } from "next/router";
 import Layout from "../../components/layout";
 import Blog from "../../components/pages/blog";
 import { getBlogById, getBlogs } from "../../lib/lib";
@@ -37,7 +38,7 @@ type Props = {
 const BlogPage = ({ data }: Props) => {
   if (data) {
     return (
-      <Layout>
+      <Layout title={data.title}>
         <Blog blog={data} />
       </Layout>
     );

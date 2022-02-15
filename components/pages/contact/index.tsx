@@ -59,7 +59,7 @@ const ContactPage = () => {
   };
 
   return (
-    <Layout>
+    <Layout title={"Contact"}>
       <Container>
         <h1 className="main-header">
           Say <span className="red">hello</span>

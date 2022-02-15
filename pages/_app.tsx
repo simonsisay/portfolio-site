@@ -6,6 +6,8 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/globalStyles";
 import AppTheme, { ThemeContext } from "../context/themeProvider";
 import Head from "next/head";
+import SEO from "../next-seo.config";
+import { DefaultSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +16,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        <DefaultSeo {...SEO} />
+        <meta
+          name="keywords"
+          content="Ethiopia software React Developer software web development freelancer simon sisay"
         />
       </Head>
       <GlobalStyle />

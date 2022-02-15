@@ -43,7 +43,7 @@ type Props = {
 const ProjectPage = ({ data, errors }: Props) => {
   if (data) {
     return (
-      <Layout>
+      <Layout title={"Portfolio"}>
         <Project project={data} />
       </Layout>
     );
