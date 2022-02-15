@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <AppTheme>
-        <DefaultSeo {...SEO} />
+        {/* <DefaultSeo {...SEO} /> */}
         <ThemeContext.Consumer>
           {({ theme: currentTheme }) => (
             <ThemeProvider theme={theme[currentTheme]}>

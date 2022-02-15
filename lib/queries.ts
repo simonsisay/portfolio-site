@@ -87,17 +87,3 @@ export const PROJECT_QUERY = gql`
   }
   ${PROJECT_FIELDS}
 `;
-
-export const CV_QUERY = gql`
-  query allCvs {
-    allCvs {
-      edges {
-        node {
-          cv {
-            _linkType
-          }
-        }
-      }
-    }
-  }
-`;

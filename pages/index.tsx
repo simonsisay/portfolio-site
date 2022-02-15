@@ -3,7 +3,6 @@ import {
   getBlogs,
   getProjects,
   getTestimonies,
-  getCv,
 } from "../lib/lib";
 
 import Layout from "../components/layout";

@@ -85,4 +85,8 @@ a {
   font-family: 'Prompt', sans-serif;
   font-style: italic;
 }
+
+.underline{
+  text-decoration: underline;
+}
 `;

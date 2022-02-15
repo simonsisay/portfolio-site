@@ -7,7 +7,6 @@ import {
   TESTIMONY_QUERY,
   PROJECTS_QUERY,
   PROJECT_QUERY,
-  CV_QUERY,
 } from "./queries";
 
 export const getBlogs = async () => {
@@ -100,22 +99,6 @@ export const getProjectById = async (id: string) => {
       ...project?.node,
     }));
     return { data: project, errors: null };
-  } else {
-    return { data: null, errors };
-  }
-};
-
-export const getCv = async () => {
-  const { data, errors = null } = await client.query<{
-    allCvs: Query["allCvs"];
-  }>({
-    query: CV_QUERY,
-  });
-  if (data) {
-    const cvs = data.allCvs.edges?.map((cv) => ({
-      ...cv?.node,
-    }));
-    return { data: cvs, errors: null };
   } else {
     return { data: null, errors };
   }

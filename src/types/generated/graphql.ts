@@ -147,7 +147,7 @@ export type Projects = _Document & _Linkable & {
   _meta: Meta;
   description?: Maybe<Scalars['Json']>;
   images?: Maybe<Array<ProjectsImages>>;
-  project_link?: Maybe<_Linkable>;
+  project_link?: Maybe<Scalars['Json']>;
   project_title?: Maybe<Scalars['Json']>;
   project_type?: Maybe<Scalars['Json']>;
   role?: Maybe<Scalars['Json']>;
@@ -406,6 +406,8 @@ export enum SortProjectsy {
   MetaFirstPublicationDateDesc = 'meta_firstPublicationDate_DESC',
   MetaLastPublicationDateAsc = 'meta_lastPublicationDate_ASC',
   MetaLastPublicationDateDesc = 'meta_lastPublicationDate_DESC',
+  ProjectLinkAsc = 'project_link_ASC',
+  ProjectLinkDesc = 'project_link_DESC',
   ProjectTitleAsc = 'project_title_ASC',
   ProjectTitleDesc = 'project_title_DESC',
   ProjectTypeAsc = 'project_type_ASC',
@@ -498,7 +500,7 @@ export type WhereProjects = {
   /** description */
   description_fulltext?: InputMaybe<Scalars['String']>;
   /** project_link */
-  project_link?: InputMaybe<Scalars['String']>;
+  project_link_fulltext?: InputMaybe<Scalars['String']>;
   /** project_title */
   project_title_fulltext?: InputMaybe<Scalars['String']>;
   /** project_type */
