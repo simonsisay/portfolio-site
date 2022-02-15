@@ -140,7 +140,7 @@ type Projects implements _Document & _Linkable {
   _meta: Meta!
   description: Json
   images: [ProjectsImages!]
-  project_link: _Linkable
+  project_link: Json
   project_title: Json
   project_type: Json
   role: Json
@@ -243,6 +243,8 @@ enum SortProjectsy {
   meta_firstPublicationDate_DESC
   meta_lastPublicationDate_ASC
   meta_lastPublicationDate_DESC
+  project_link_ASC
+  project_link_DESC
   project_title_ASC
   project_title_DESC
   project_type_ASC
@@ -341,7 +343,7 @@ input WhereProjects {
   description_fulltext: String
 
   """project_link"""
-  project_link: String
+  project_link_fulltext: String
 
   """project_title"""
   project_title_fulltext: String

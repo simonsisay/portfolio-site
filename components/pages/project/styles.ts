@@ -44,6 +44,12 @@ export const Container = styled.div`
     display: block;
     margin: 4px;
   }
+
+  .description a {
+    color: ${({ theme }) => theme.primaryColor};
+    text-decoration: underline;
+  }
+
   .gray {
     color: ${({ theme }) => theme.gray1};
     font-size: 24px;
@@ -54,9 +60,18 @@ export const Container = styled.div`
     display: block;
   }
 
+  .role p {
+    display: block;
+    margin-top: 24px;
+  }
+
   .stack p,
   .role p {
     display: inline-block;
+  }
+
+  .project-link {
+    text-decoration: underline;
   }
 
   @media (max-width: 768px) {
@@ -71,9 +86,19 @@ export const Container = styled.div`
       display: flex;
     }
 
+    .description {
+      font-size: 18px;
+      line-height: 1.65rem;
+    }
+
     .main-header {
       font-size: 3.4vh;
       width: 100%;
+    }
+
+    .role,
+    .stack p {
+      font-size: 16px;
     }
   }
 `;

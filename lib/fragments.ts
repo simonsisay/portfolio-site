@@ -20,6 +20,7 @@ export const PROJECT_FIELDS = gql`
   fragment ProjectParts on Projects {
     project_title
     project_type
+    project_link
     images {
       screenshot
     }
@@ -27,9 +28,6 @@ export const PROJECT_FIELDS = gql`
     role
     technologies {
       stack
-    }
-    project_link {
-      _linkType
     }
     _meta {
       uid

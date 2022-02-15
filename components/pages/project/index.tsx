@@ -35,7 +35,9 @@ const Project = ({ project }: Props) => {
         <p className="text description">
           {RichText.render(project?.description)}
         </p>
-        <p className="gray text role">Role: {RichText.render(project?.role)}</p>
+        <p className="gray text role">
+          Role: <span className="red">{RichText.render(project?.role)}</span>
+        </p>
         <div className="stack gray">
           <p className="label gray">Tech:</p>
           {project?.technologies?.map((item) => (
@@ -44,6 +46,12 @@ const Project = ({ project }: Props) => {
             </p>
           ))}
         </div>
+        <p className="gray text role project-link">
+          Project Url:{" "}
+          <span className="red underline">
+            {RichText.render(project?.project_link)}
+          </span>
+        </p>
       </div>
     </Container>
   );

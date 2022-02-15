@@ -57,7 +57,6 @@ export const Container = styled.div`
     .buttons {
       padding: 0px;
       margin-top: 16px;
-      margin-left: 12px;
     }
 
     .progress-bar-container {
