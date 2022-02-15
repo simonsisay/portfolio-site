@@ -13,11 +13,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>Simon Sisay</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
         />
-        <DefaultSeo {...SEO} />
         <meta
           name="keywords"
           content="Ethiopia software React Developer software web development freelancer simon sisay"
@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <AppTheme>
+        <DefaultSeo {...SEO} />
         <ThemeContext.Consumer>
           {({ theme: currentTheme }) => (
             <ThemeProvider theme={theme[currentTheme]}>

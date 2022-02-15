@@ -1,14 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import bg from "../../../public/images/bg.png";
-
-const bgAnimation = keyframes`
-  from{
-    background-position: 0% 0%;
-  }
-  to{
-    background-position: 100% 100%;
-  }
-`;
 
 const slide = keyframes`
   0% {
@@ -53,6 +43,7 @@ export const HeroContainer = styled.div`
 
   button {
     width: 100%;
+    max-width: 220px;
     margin-top: 24px;
     padding: 16px;
   }
