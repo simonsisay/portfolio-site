@@ -7,8 +7,7 @@ import { Link as PrismicLink } from "prismic-reactjs";
 const HeroSection = () => {
   const downloadCv = () => {
     window.open(
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-site-e9c41.appspot.com/o/CV%20(1).pdf?alt=media&token=c05dc062-b394-429c-b682-3d4cb27f3f33",
-      "_blank"
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-site-e9c41.appspot.com/o/Resume_%20Simon%20Sisay%20Final.pdf?alt=media&token=1b6b3165-fa63-4f54-adab-feb08476bada"
     );
   };
 
