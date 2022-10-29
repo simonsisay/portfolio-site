@@ -76,6 +76,10 @@ export const HeroContainer = styled.div`
     .sub-header {
       display: block;
     }
+
+    .mini-hero-text {
+      margin-right: 0%;
+    }
   }
 `;
 
