@@ -46,7 +46,7 @@ export const HeroContainer = styled.div`
     position: absolute;
     right: 0;
     bottom: 0;
-    font-size: 12px;
+    font-size: 10px;
     color: rgba(255, 255, 255, 0.4);
     margin-right: -10%;
   }
