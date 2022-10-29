@@ -30,6 +30,7 @@ export const HeroContainer = styled.div`
   height: 80vh;
   display: flex;
   align-items: center;
+  position: relative;
 
   .line {
     width: 10px;
@@ -39,6 +40,15 @@ export const HeroContainer = styled.div`
     margin-right: 5%;
     animation: ${slideDown} 1s ease-in;
     animation-delay: 1s;
+  }
+
+  .mini-hero-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: -10%;
   }
 
   button {
