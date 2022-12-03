@@ -52,13 +52,18 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 15vh;
+    width: 90%;
 
     .main-header {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .excerpt {
       font-size: 1rem;
+    }
+    .content {
+      max-width: 90%;
+      font-size: 18px;
     }
   }
 `;
