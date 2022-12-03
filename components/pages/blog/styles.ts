@@ -18,15 +18,17 @@ export const Container = styled.div`
   }
 
   .content {
-    font-size: 22px;
+    font-size: 18px;
     max-width: 80%;
     margin: auto;
     margin-top: 80px;
+    color: ${({ theme }) => theme.lightText};
   }
 
   .content img {
+    width: 100%;
     max-width: 100%;
-    max-height: 50vh;
+    max-height: 500px;
   }
 
   .content pre {
