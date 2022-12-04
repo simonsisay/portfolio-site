@@ -31,6 +31,11 @@ export const Container = styled.div`
     max-height: 500px;
   }
 
+  .content a {
+    color: ${({ theme }) => theme.primaryColor};
+    text-decoration: underline;
+  }
+
   .content pre {
     background-color: #030b26;
     padding: 34px;
