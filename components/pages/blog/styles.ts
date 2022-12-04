@@ -13,6 +13,8 @@ export const Container = styled.div`
 
   .excerpt {
     text-align: center;
+    max-width: 80%;
+    margin: auto;
     font-size: 20px;
     color: ${({ theme }) => theme.lightText};
   }
@@ -21,7 +23,7 @@ export const Container = styled.div`
     font-size: 18px;
     max-width: 80%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
     color: ${({ theme }) => theme.lightText};
   }
 
