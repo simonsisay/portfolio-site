@@ -44,6 +44,10 @@ export const Container = styled.div`
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
   }
 
+  .content h2 {
+    margin-top: 60px;
+  }
+
   .tags {
     display: flex;
     max-width: 80%;
