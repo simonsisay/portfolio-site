@@ -31,9 +31,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,700;1,300&display=swap"
             rel="stylesheet"
           ></link>
-          <meta 
-            name="description" 
-            content="Meet one of ethiopia's finest developers. A top rated software developer with extensive knowledge on web technologies" 
+          <meta
+            key="desc"
+            name="description"
+            content="Meet one of ethiopia's finest developers. A top rated software developer with extensive knowledge on web technologies"
           />
         </Head>
         <body>

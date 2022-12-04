@@ -10,12 +10,15 @@ type Props = {
 const Blog = ({ blog }: Props) => {
   const firstImage = blog?.content.find((item: any) => item.type === "image");
 
-  console.log(blog?.description);
   return (
     <Container>
       <Head>
         <title>{blog?.title[0].text}</title>
-        <meta name="description" content={blog?.description[0].text} />
+        <meta
+          key="desc"
+          name="description"
+          content={blog?.description[0].text}
+        />
         <meta property="og:image" content={firstImage?.url} />
       </Head>
       <h1 className="main-header">{RichText.render(blog?.title)}</h1>
