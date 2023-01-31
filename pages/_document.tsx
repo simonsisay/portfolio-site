@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
           <meta
             key="desc"
             name="description"
-            content="Meet one of ethiopia's finest developers. A top rated software developer with extensive knowledge on web technologies"
+            content="Simon is a top rated software developer with extensive knowledge on web technologies"
           />
         </Head>
         <body>

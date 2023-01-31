@@ -10,6 +10,7 @@ type Props = {
 const Blog = ({ blog }: Props) => {
   const firstImage = blog?.content.find((item: any) => item.type === "image");
 
+  console.log(blog?.title[0].text);
   return (
     <Container>
       <Head>
