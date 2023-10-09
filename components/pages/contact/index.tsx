@@ -120,10 +120,6 @@ const ContactPage = () => {
               website/App or just want to say hello, please feel free to send me
               a message.
             </p>
-            <div className="phone">
-              <FaMobileAlt className="social-icon" />
-              <p>+251911056281</p>
-            </div>
             <div className="social-icons">
               <a
                 rel="noopener noreferrer"
