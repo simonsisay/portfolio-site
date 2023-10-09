@@ -11,9 +11,7 @@ const Portfolio = ({ projects }: Props) => {
     <Container id="portfolio">
       <h2 className="title">Projects</h2>
       <div className="project-list">
-        <h1 className="main-header projects-header">
-          Works that I&apos;ve done in the past
-        </h1>
+        <h1 className="main-header projects-header">My works</h1>
         {projects.reverse().map((project, index) => {
           return (
             <div className="card" key={index}>

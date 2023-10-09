@@ -119,7 +119,7 @@ export const About = styled.div`
 
   .about-words {
     line-height: 2;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 80%;
   }
 
@@ -218,7 +218,7 @@ export const Portfolio = styled.div`
     text-align: left;
     color: ${({ theme }) => theme.gray1};
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .projects-header {
@@ -265,7 +265,7 @@ export const Portfolio = styled.div`
     }
 
     .projects-header {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .card {

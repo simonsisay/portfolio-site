@@ -15,7 +15,7 @@ export const Container = styled.div`
 
   .words {
     animation: ${textAnimation} 1s ease;
-    font-size: 24px;
+    font-size: 1.3rem;
   }
 
   .name {

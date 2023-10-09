@@ -22,7 +22,7 @@ export const Container = styled.div`
 
   .title {
     color: ${({ theme }) => theme.textColor};
-    font-size: 3rem;
+    font-size: 2.2rem;
     position: absolute;
     bottom: 0px;
     opacity: 0;
