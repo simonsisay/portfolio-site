@@ -14,7 +14,7 @@ const Portfolio = ({ projects }: Props) => {
         <h1 className="main-header projects-header">
           Works that I&apos;ve done in the past
         </h1>
-        {projects.map((project, index) => {
+        {projects.reverse().map((project, index) => {
           return (
             <div className="card" key={index}>
               <ProjectCard project={project} />

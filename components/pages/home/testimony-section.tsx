@@ -18,7 +18,7 @@ const Testimony = ({ testimonies }: Props) => {
       </div>
       <div className="carousel-container">
         <Carousel>
-          {testimonies.map((testimony, index) => (
+          {testimonies.reverse().map((testimony, index) => (
             <TestimonyCard key={index} data={testimony} />
           ))}
         </Carousel>
