@@ -26,7 +26,7 @@ const HeroSection = () => {
         <h1 className="main-header sub-header">for the web.</h1>
         {/* <Button onClick={downloadCv}>Download CV</Button> */}
       </div>
-      <p className="mini-hero-text">የጥበብ መጀመርያ እግዚአብሄርን መፍራት ነው።</p>
+{/*       <p className="mini-hero-text">የጥበብ መጀመርያ እግዚአብሄርን መፍራት ነው።</p> */}
     </Container>
   );
 };
